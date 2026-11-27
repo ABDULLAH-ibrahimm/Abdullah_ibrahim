@@ -41,7 +41,7 @@ step_configure() {
   run git config --global pull.rebase false
   run git config --global color.ui always
   run git config --global --list
-  run 'git ls-remote --heads "$REPO_URL"'
+  run 'git ls-remote --heads "$REPO_URL" main'
 }
 
 step_upload() {
@@ -64,7 +64,7 @@ step_clone() {
   banner "Cloning: clone the GitHub repo to local Git"
   cd /workspace
   run rm -rf "$CLONE_DIR"
-  run 'git clone --branch "$BRANCH" "$REPO_URL" /workspace/clone'
+  run 'git clone --single-branch --branch "$BRANCH" "$REPO_URL" /workspace/clone'
   cd "$CLONE_DIR"
   run git remote
   run git branch -a
