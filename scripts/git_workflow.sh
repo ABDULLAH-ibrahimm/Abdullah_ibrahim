@@ -55,7 +55,9 @@ step_upload() {
   run git add .
   run git status --short
   run "git commit -q -m 'Add CDS2413 data science project files (CLO1-CLO3) + Docker setup'"
-  run git push -u origin "$BRANCH"
+  run git push -q -u origin "$BRANCH"
+  run git status -sb
+  run git log --oneline -3 "origin/$BRANCH"
 }
 
 step_clone() {
@@ -74,7 +76,7 @@ step_pull() {
   banner "Pull: pull a file that was added on GitHub"
   cd "$CLONE_DIR"
   run "ls $PULL_FILE 2>&1 || true"
-  run git pull origin "$BRANCH"
+  run git pull -q origin "$BRANCH"
   run git log --oneline -3
   run cat "$PULL_FILE"
 }
@@ -91,10 +93,10 @@ EOF"
   run git status --short
   run git diff --stat
   run git add "$PULL_FILE"
-  run "git commit -q -m 'Update CHANGELOG after pull (CLO4 push demo)'"
-  run git push origin "$BRANCH"
-  run git log --oneline -4
+  run "git commit -q -m 'Update $PULL_FILE after pull (CLO4 push demo)'"
+  run git push -q origin "$BRANCH"
   run git status -sb
+  run git log --oneline -4 "origin/$BRANCH"
 }
 
 case "${1:-}" in
