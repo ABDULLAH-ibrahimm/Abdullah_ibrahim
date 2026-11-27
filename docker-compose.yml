@@ -1,0 +1,16 @@
+services:
+  pipeline:
+    build: .
+    image: cds2413-data-science:1.0
+    volumes:
+      - ./data:/workspace/project/data
+      - ./reports:/workspace/project/reports
+  git:
+    image: cds2413-data-science:1.0
+    entrypoint: ["bash"]
+    working_dir: /workspace
+    environment:
+      - GIT_AUTHOR_NAME
+      - GIT_AUTHOR_EMAIL
+    stdin_open: true
+    tty: true
