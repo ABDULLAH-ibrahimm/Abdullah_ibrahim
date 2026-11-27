@@ -14,10 +14,11 @@
 # -----------------------------------------------------------------------------
 set -euo pipefail
 
-REPO_URL="${REPO_URL:-https://github.com/ABDULLAH-ibrahimm/Abdullah_ibrahim.git}"
+REPO_URL="${REPO_URL:?set REPO_URL to your GitHub repo URL}"
+export REPO_URL
 BRANCH="${BRANCH:-main}"
-GIT_USER_NAME="${GIT_USER_NAME:-Abdullah Ibrahim}"
-GIT_USER_EMAIL="${GIT_USER_EMAIL:-student@example.com}"
+GIT_USER_NAME="${GIT_USER_NAME:-Student Lab}"
+GIT_USER_EMAIL="${GIT_USER_EMAIL:-student.lab@gmail.com}"
 PULL_FILE="${PULL_FILE:-docs/CHANGELOG.md}"
 PROJECT_DIR="/workspace/project"
 CLONE_DIR="/workspace/clone"
@@ -40,14 +41,14 @@ step_configure() {
   run git config --global pull.rebase false
   run git config --global color.ui always
   run git config --global --list
-  run git ls-remote --heads "$REPO_URL"
+  run 'git ls-remote --heads "$REPO_URL"'
 }
 
 step_upload() {
   banner "Uploading: upload CLO1-CLO3 project files to GitHub"
   cd "$PROJECT_DIR"
   run git init -q
-  run git remote add origin "$REPO_URL"
+  run 'git remote add origin "$REPO_URL"'
   run git fetch -q origin main
   run git reset -q origin/main          # attach to the existing GitHub history
   run git checkout -q -b "$BRANCH"
@@ -61,9 +62,10 @@ step_clone() {
   banner "Cloning: clone the GitHub repo to local Git"
   cd /workspace
   run rm -rf "$CLONE_DIR"
-  run git clone --branch "$BRANCH" "$REPO_URL" "$CLONE_DIR"
+  run 'git clone --branch "$BRANCH" "$REPO_URL" /workspace/clone'
   cd "$CLONE_DIR"
-  run git remote -v
+  run git remote
+  run git branch -a
   run git log --oneline -5
   run ls
 }

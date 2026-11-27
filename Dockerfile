@@ -5,7 +5,7 @@ FROM python:3.12
 
 LABEL org.opencontainers.image.title="cds2413-data-science-project" \
       org.opencontainers.image.description="Data science project + Git version control workflow" \
-      org.opencontainers.image.authors="Abdullah Ibrahim"
+      org.opencontainers.image.authors="Student Lab"
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \

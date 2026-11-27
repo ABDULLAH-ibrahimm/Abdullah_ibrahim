@@ -72,4 +72,4 @@ bash scripts/git_workflow.sh push
 | CLO3 – Analysis   | correlation heatmap, class distribution, Random Forest test accuracy = 1.00 |
 
 ## Author
-**Abdullah Ibrahim** – [GitHub](https://github.com/ABDULLAH-ibrahimm)
+**Student Lab** – student.lab@gmail.com
