@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Co-op Poster B</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Caveat:wght@600;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1A4F;--navy2:#13277A;--blue:#0050E0;--sky:#0A86F0;--green:#009456;--orange:#FF4F1A;--purple:#6A0DDB;--ink:#0E1630;--muted:#4A5375;--line:#E3E7F2;
+--blue-bg:#EEF4FF;--green-bg:#E9F7F0;--orange-bg:#FFF1EA;--purple-bg:#F3ECFE;--navy-bg:#EEF0F8;--cream:#FBF7EE}
+@page{size:1440px 957px;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:957px;overflow:hidden;background:#E9ECF4;font-family:Inter,sans-serif;color:var(--ink);font-size:10.5px;line-height:1.38;position:relative}
+svg{fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.panel{position:absolute;top:14px;width:458px;height:929px;overflow:hidden;box-shadow:0 4px 18px rgba(11,26,79,.12)}
+.p1{left:16px;background:#fff}.p2{left:491px;background:var(--cream)}.p3{left:966px;background:#fff}
+.hand{font-family:Caveat,cursive;font-weight:700}
+.foot{position:absolute;left:0;bottom:0;width:100%;height:34px;background:var(--navy);display:flex;color:#fff;font-weight:800;font-size:10.5px;letter-spacing:.12em}
+.foot div{flex:1;display:flex;gap:7px;align-items:center;justify-content:center}
+.foot svg{width:14px;height:14px;stroke:#fff}
+.foot .bar{position:absolute;top:-4px;left:0;width:100%;height:4px;display:flex}.foot .bar i{flex:1}
+
+/* ---------- panel 1 ---------- */
+.p1 .top{padding:22px 22px 0;height:240px;position:relative}
+.kick{font-size:10px;letter-spacing:.2em;font-weight:800;color:var(--blue)}
+.p1 h1{font-size:31px;line-height:1.04;font-weight:900;color:var(--navy);margin-top:8px;letter-spacing:-.02em;width:240px}
+.p1 h1 span{color:var(--green)}
+.p1 .s1{font-size:13px;margin-top:10px;color:#28315a}
+.p1 .s2{font-size:9.6px;color:var(--muted);margin-top:2px}
+.p1 .tags{font-size:8.6px;font-weight:800;letter-spacing:.06em;color:var(--navy);margin-top:12px}
+.p1 .tags b{color:var(--orange)}
+.shot1{position:absolute;right:-30px;top:18px;width:200px;height:200px;overflow:hidden;border-radius:6px;transform:rotate(4deg);box-shadow:0 8px 20px rgba(0,0,0,.25);border:4px solid #fff}
+.shot1 img{width:100%;display:block}
+.logos{position:absolute;left:16px;right:16px;bottom:36px;height:38px;display:flex;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:6px}.logos img{height:32px}.logos span{font-size:9.6px;color:var(--muted);font-weight:600}
+.p1 .glance{display:flex;gap:10px;padding:0 16px;margin-top:14px}
+.atg{width:150px;background:var(--navy);color:#fff;border-radius:6px;padding:11px 12px}
+.atg h3{font-size:14px;font-weight:800;margin-bottom:6px}
+.atg .g{display:flex;gap:8px;margin-top:7px}
+.atg svg{width:20px;height:20px;stroke:#9FC2FF;flex:none;margin-top:1px}
+.atg b{font-size:10.4px;display:block}.atg p{font-size:9.4px;color:#C9D4F5}
+.resp{flex:1;background:var(--blue-bg);border-radius:6px;padding:11px 13px}
+.resp h3,.box h3{font-size:14px;font-weight:800;color:var(--navy);margin-bottom:6px}
+.resp li{font-size:10px;color:#2f3858;margin:0 0 6px 12px;list-style:none;position:relative}
+.resp li::before{content:"";position:absolute;left:-10px;top:5px;width:5px;height:5px;border-radius:50%;background:var(--blue)}
+.box{margin:10px 16px 0;border-radius:6px;padding:11px 13px}
+.kp{display:flex}
+.kp>div{flex:1;text-align:center;padding:0 6px;border-right:1px solid #CFE0D6}
+.kp>div:last-child{border:0}
+.kp svg{width:24px;height:24px;stroke:var(--green)}
+.kp h4{font-size:10.8px;font-weight:800;color:var(--navy);margin:3px 0 2px}
+.kp p{font-size:9.2px;color:#3c4466;line-height:1.3}
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:9px 12px}
+.sg .i{display:flex;gap:8px}
+.dot{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;flex:none}
+.dot svg{width:13px;height:13px;stroke:#fff}
+.sg h4{font-size:10.6px;font-weight:800;color:var(--navy)}
+.sg p{font-size:9.2px;color:#3c4466;line-height:1.3}
+.qrow{display:flex;gap:10px;margin:10px 16px 0;align-items:center}
+.qt{flex:1;background:var(--navy-bg);border-radius:6px;padding:11px 13px;font-style:italic;font-size:10.8px;color:#28315a;position:relative;padding-left:32px}
+.qt::before{content:"\201C";position:absolute;left:10px;top:-2px;font-size:38px;font-weight:900;color:var(--blue);font-style:normal}
+.grat{width:142px;background:var(--navy);color:#FFC24D;font-size:23px;line-height:.95;text-align:center;padding:12px 6px;transform:rotate(-4deg);border-radius:4px}
+
+/* ---------- panel 2 ---------- */
+.p2 h1{font-family:Kalam,cursive;font-weight:700;font-size:39px;color:var(--navy);margin:20px 0 0 22px;position:relative;display:inline-block;z-index:1}
+.p2 h1::after{content:"";position:absolute;left:-6px;right:-30px;bottom:8px;height:13px;background:#FFD24D;z-index:-1}
+.p2 .tag{font-family:Kalam,cursive;font-size:14px;color:#2a3366;margin:4px 0 0 34px}
+.label{display:inline-block;font-family:Caveat,cursive;font-weight:700;font-size:19px;padding:0 10px;line-height:1.35;transform:rotate(-1.5deg)}
+.pol{position:absolute;background:#fff;padding:6px 6px 22px;box-shadow:0 6px 16px rgba(0,0,0,.18)}
+.pol img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.sticky{position:absolute;font-family:Caveat,cursive;font-weight:700;font-size:17px;line-height:1;padding:7px 10px;box-shadow:0 3px 8px rgba(0,0,0,.15);color:var(--navy)}
+.basics{position:absolute;left:236px;top:124px;width:206px;background:var(--blue-bg);border-radius:4px;padding:8px 11px 9px}
+.basics .label{background:var(--navy);color:#fff;margin-bottom:4px}
+.bs{display:flex;gap:8px;margin-top:5px}
+.bs svg{width:16px;height:16px;stroke:var(--navy);flex:none;margin-top:1px}
+.bs b{font-size:10px;color:var(--navy);display:block}.bs p{font-size:9.2px;color:#3c4466;line-height:1.3}
+.journey{position:absolute;left:16px;top:352px;width:212px}
+.journey .label{background:#FFD24D;color:var(--navy)}
+.js{display:flex;gap:8px;margin-top:8px;position:relative}
+.js .n{width:20px;height:20px;border-radius:50%;color:#fff;font-weight:800;font-size:10px;display:grid;place-items:center;flex:none}
+.js b{font-size:10.6px;color:var(--navy);display:block}
+.js p{font-size:9.3px;color:#3c4466;line-height:1.32;width:116px}
+.js b{width:122px}
+.js .nt{position:absolute;right:-8px;top:14px;width:64px;font-family:Caveat,cursive;font-weight:700;font-size:13px;line-height:1;color:#344;text-align:center;transform:rotate(-6deg)}
+.learn{position:absolute;left:236px;top:352px;width:206px;background:var(--purple-bg);border-radius:4px;padding:8px 11px 8px}
+.learn .label{background:#fff;color:var(--purple);box-shadow:0 2px 5px rgba(0,0,0,.08)}
+.ls{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid #DED0F7}
+.ls:last-child{border:0;padding-bottom:0}
+.ls .dot{width:24px;height:24px;background:var(--purple)}
+.ls b{font-size:10.2px;color:var(--purple);display:block}.ls p{font-size:9.1px;color:#3c4466;line-height:1.3}
+.chal{position:absolute;left:204px;top:618px;width:240px;background:var(--green-bg);border-radius:4px;padding:8px 11px 9px}
+.chal .label{background:#BFEBD5;color:#04643B;font-size:16px;white-space:nowrap;padding:0 8px}
+.cs{display:flex;gap:6px;margin-top:6px}
+.cs svg{width:12px;height:12px;stroke:var(--green);stroke-width:3;flex:none;margin-top:2px}
+.cs b{font-size:10px;color:var(--navy);display:block}.cs p{font-size:9.1px;color:#3c4466}
+.bt{position:absolute;left:16px;top:786px;width:282px;background:#FFE4D9;padding:7px 12px 9px;transform:rotate(-.8deg)}
+.bt .label{background:#FFC7B0;color:#B8320A;font-size:17px}
+.bt p{font-family:Kalam,cursive;font-size:11.4px;line-height:1.4;color:#2a3366;margin-top:4px}
+.lcg{position:absolute;right:20px;top:790px;width:120px;font-family:Caveat,cursive;font-weight:700;font-size:27px;line-height:.98;color:var(--navy);text-align:center;transform:rotate(-7deg)}
+
+/* ---------- panel 3 ---------- */
+.p3 .hd{height:226px;background:linear-gradient(120deg,var(--navy),var(--navy2) 75%,#1B3BA8);color:#fff;padding:22px 22px 0;position:relative;overflow:hidden}
+.p3 .hd::after{content:"";position:absolute;right:-70px;top:-90px;width:260px;height:260px;border-radius:50%;background:conic-gradient(from -45deg,var(--blue) 0 25%,var(--green) 0 50%,var(--orange) 0 75%,var(--purple) 0 100%);opacity:.14}
+.p3 .kick{color:#9FC2FF}
+.p3 h1{font-size:31px;font-weight:900;line-height:1.04;margin-top:8px;letter-spacing:-.02em}
+.p3 .sub{font-size:13px;color:#DCE6FF;margin-top:8px}
+.p3 .lc{font-size:8.6px;font-weight:800;letter-spacing:.14em;margin-top:12px;color:#fff}
+.p3 .lc span{opacity:.4;margin:0 6px}
+.same{position:absolute;right:18px;top:16px;font-size:20px;line-height:.95;color:#fff;text-align:right;transform:rotate(-6deg);z-index:2}
+.chart{position:absolute;right:14px;top:96px;width:168px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:8px 10px 6px;z-index:2}
+.chart h6{font-size:7.8px;letter-spacing:.14em;font-weight:800;color:#DCE6FF}
+.bars{display:flex;align-items:flex-end;gap:6px;height:76px;margin-top:16px;border-bottom:1px solid rgba(255,255,255,.3)}
+.bars div{flex:1;border-radius:3px 3px 0 0;position:relative}
+.bars div span{position:absolute;top:-12px;left:0;right:0;text-align:center;font-size:8px;font-weight:800;color:#fff}
+.bl{display:flex;gap:6px;margin-top:3px}.bl span{flex:1;text-align:center;font-size:7.4px;color:#C9D4F5;font-weight:600}
+.stats{display:flex;padding:14px 8px 12px;border-bottom:1px solid var(--line)}
+.stats>div{flex:1;text-align:center;border-right:1px solid var(--line);padding:0 4px}
+.stats>div:last-child{border:0}
+.stats .c{width:36px;height:36px;border-radius:50%;margin:0 auto 5px;display:grid;place-items:center}
+.stats .c svg{width:20px;height:20px;stroke:#fff}
+.stats b{font-size:10.6px;color:var(--navy);display:block}.stats p{font-size:9px;color:var(--muted);line-height:1.3}
+.two{display:flex;gap:10px;padding:14px 14px 0}
+.bx{flex:1;border:1px solid var(--line);border-radius:6px;padding:7px 10px 6px}
+.bx h3{font-size:13px;font-weight:800;color:var(--navy);margin-bottom:2px}
+.wd{display:flex;gap:7px;border-radius:5px;padding:5px 6px;margin-top:3px}
+.wd .dot{width:22px;height:22px}.wd .dot svg{width:11px;height:11px}
+.wd b{font-size:9.8px;color:var(--navy);display:block}.wd p{font-size:8.8px;color:#3c4466;line-height:1.28}
+.ethq{display:flex;gap:10px;padding:12px 14px 0}
+.qbox{flex:1;background:var(--navy);color:#fff;border-radius:6px;padding:14px 14px;font-style:italic;font-size:11px;line-height:1.5;display:flex;flex-direction:column;justify-content:center}
+.qbox i.q{font-style:normal;font-size:34px;font-weight:900;color:var(--orange);line-height:.6;margin-bottom:6px}
+.ahead{position:absolute;left:0;bottom:34px;width:100%;height:136px;background:linear-gradient(120deg,var(--navy),var(--navy2));color:#fff;padding:12px 16px}
+.ahead h3{font-size:14px;font-weight:800}
+.ahead p{font-size:9.6px;color:#C9D4F5;width:280px;margin-top:3px}
+.ahead p b{color:#fff}
+.best{position:absolute;right:18px;top:12px;font-size:21px;line-height:.95;text-align:right;transform:rotate(-6deg);color:#FFC24D}
+.steps{display:flex;gap:6px;margin-top:10px}
+.steps div{flex:1;border:1px solid rgba(255,255,255,.28);border-radius:5px;padding:6px 6px;display:flex;gap:6px;align-items:center;font-size:8.6px;line-height:1.2;color:#E6ECFF}
+.steps i{width:18px;height:18px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:800;font-size:9px;flex:none;color:#fff}
+.disc{position:absolute;left:16px;bottom:6px;font-size:7.8px;color:#9FB0DE}
+</style>
+</head>
+<body>
+
+<!-- ======================= PANEL 1 ======================= -->
+<section class="panel p1">
+  <div class="top">
+    <div class="kick">CO-OP EXPERIENCE</div>
+    <h1>Turning Learning into <span>Real-World</span> Impact</h1>
+    <div class="s1">My Co-op Journey at KACST</div>
+    <div class="s2">Jenan Al Shaya · Al Yamamah University</div>
+    <div class="tags">REAL PROJECTS <b>/</b> NEW SKILLS <b>/</b> LASTING CONNECTIONS</div>
+    <div class="shot1"><img src="tc04.png" alt="Health Open AI prototype"></div>
+  </div>
+
+  <div class="glance">
+    <div class="atg">
+      <h3>At a Glance</h3>
+      <div class="g"><svg viewBox="0 0 24 24"><path d="M4 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16"/><path d="M15 9h3a2 2 0 0 1 2 2v10M8 7h3M8 11h3M8 15h3M2 21h20"/></svg><div><b>Company</b><p>KACST (Digital Health Institute)</p></div></div>
+      <div class="g"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Location</b><p>Riyadh, Saudi Arabia</p></div></div>
+      <div class="g"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg><div><b>Duration</b><p>Jun – Nov 2026<br>(22 weeks)</p></div></div>
+      <div class="g"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><div><b>Role</b><p>Co-op Student · Project Coordinator</p></div></div>
+    </div>
+    <div class="resp">
+      <h3>My Responsibilities</h3>
+      <ul>
+        <li>Coordinated three trainee teams and wrote weekly progress reports</li>
+        <li>Built the medical knowledge base (25 trusted sources) and RAG pipeline with a local LLM</li>
+        <li>Reproduced, stabilised and tested the full prototype after handover</li>
+        <li>Evaluated correctness, evidence support, hallucination and safety</li>
+        <li>Manually validated 20 test cases and wrote the final technical report</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box" style="background:var(--green-bg)">
+    <h3>Key Projects</h3>
+    <div class="kp">
+      <div><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg><h4>Medical RAG &amp; LLM</h4><p>Trusted WHO/CDC/NICE sources answered by a local Phi-3 Mini model.</p></div>
+      <div><svg viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg><h4>Retrieval Boost</h4><p>Raised hit rate from 76.7% to 90% by tuning Top-K.</p></div>
+      <div><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><h4>Safety Evaluation</h4><p>Graded 50 answers and compared LLM-only vs. LLM + RAG.</p></div>
+    </div>
+  </div>
+
+  <div class="box" style="background:var(--blue-bg)">
+    <h3>Skills &amp; Growth</h3>
+    <div class="sg">
+      <div class="i"><div class="dot" style="background:var(--blue)"><svg viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></div><div><h4>Technical Skills</h4><p>Python, Java, SPARQL, Git<br>RAG, ChromaDB, Ollama</p></div></div>
+      <div class="i"><div class="dot" style="background:var(--green)"><svg viewBox="0 0 24 24"><path d="M7 20h10M12 20V10M12 10c0-4 3-6 7-6 0 4-3 6-7 6zM12 13c0-3-2-5-6-5 0 3 2 5 6 5z"/></svg></div><div><h4>Personal Growth</h4><p>Confidence in my abilities<br>Ownership from end to end</p></div></div>
+      <div class="i"><div class="dot" style="background:var(--purple)"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div><h4>Professional Skills</h4><p>Bilingual reporting, teamwork<br>Time management</p></div></div>
+      <div class="i"><div class="dot" style="background:var(--orange)"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/><path d="M9 21h6"/></svg></div><div><h4>Industry Insight</h4><p>Real-world AI research<br>Safety over raw metrics</p></div></div>
+    </div>
+  </div>
+
+  <div class="qrow">
+    <div class="qt">This co-op gave me more than technical skills — it gave me confidence, professionalism, and a clearer vision for my future.</div>
+    <div class="grat hand">Grateful for the opportunity!</div>
+  </div>
+
+  <div class="logos"><img src="kacst_logo.png" alt="KACST"><span>Digital Health Institute · Health Open AI</span></div>
+  <div class="foot"><div class="bar"><i style="background:var(--blue)"></i><i style="background:var(--green)"></i><i style="background:var(--orange)"></i><i style="background:var(--purple)"></i></div>
+    <div><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>LEARN</div>
+    <div><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>CONTRIBUTE</div>
+    <div><svg viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg>GROW</div></div>
+</section>
+
+<!-- ======================= PANEL 2 ======================= -->
+<section class="panel p2">
+  <h1>My Co-op Experience</h1>
+  <div class="tag">Real Experience. Real Skills. A Brighter Future.</div>
+
+  <div class="pol" style="left:18px;top:128px;width:200px;height:206px;transform:rotate(-3deg)"><img src="tc09.png" alt="Cycling test case"></div>
+  <div class="sticky" style="left:142px;top:286px;background:#FFD24D;transform:rotate(-5deg)">Same student.<br>New perspective.</div>
+
+  <div class="basics">
+    <span class="label">The Basics</span>
+    <div class="bs"><svg viewBox="0 0 24 24"><path d="M4 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16"/><path d="M15 9h3a2 2 0 0 1 2 2v10M2 21h20"/></svg><div><b>Company</b><p>KACST (Digital Health Institute)</p></div></div>
+    <div class="bs"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Location</b><p>Riyadh, Saudi Arabia</p></div></div>
+    <div class="bs"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg><div><b>Duration</b><p>June – November 2026 (22 weeks)</p></div></div>
+    <div class="bs"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><div><b>Role</b><p>Co-op Student · Project Coordinator (RAG &amp; LLM)</p></div></div>
+  </div>
+
+  <div class="journey">
+    <span class="label">My Journey</span>
+    <div class="js"><div class="n" style="background:var(--purple)">1</div><div><b>Onboarding &amp; Training</b><p>Java, XML, Jena &amp; SPARQL, ML and sentiment analysis.</p></div><div class="nt">New tools = new chances!</div></div>
+    <div class="js"><div class="n" style="background:var(--blue)">2</div><div><b>Building &amp; Contributing</b><p>Built the medical RAG with a local Phi-3 model.</p></div><div class="nt">Small steps, big difference!</div></div>
+    <div class="js"><div class="n" style="background:var(--green)">3</div><div><b>Testing &amp; Improving</b><p>Hit rate 76.7% → 90%; graded 50 answers for safety.</p></div><div class="nt">Support builds confidence!</div></div>
+    <div class="js"><div class="n" style="background:var(--orange)">4</div><div><b>Making an Impact</b><p>20-case validation, final report &amp; presentation.</p></div><div class="nt">Real work. Real impact.</div></div>
+  </div>
+
+  <div class="learn">
+    <span class="label">What I Learned</span>
+    <div class="ls"><div class="dot"><svg viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></div><div><b>Technical Skills</b><p>Python, RAG, ChromaDB, Ollama, Streamlit, Git</p></div></div>
+    <div class="ls"><div class="dot"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-6"/></svg></div><div><b>Evaluation</b><p>Hit rate, MRR, NDCG, LOSO, answer grading</p></div></div>
+    <div class="ls"><div class="dot"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div><b>Professional Skills</b><p>Coordination, bilingual reports, deadlines</p></div></div>
+    <div class="ls"><div class="dot"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/><path d="M9 21h6"/></svg></div><div><b>Industry Insight</b><p>RAG must be tested — more data ≠ safer answers</p></div></div>
+  </div>
+
+  <div class="pol" style="left:16px;top:622px;width:178px;height:150px;transform:rotate(2deg)"><img src="tc20.png" alt="Invalid input rejected" style="object-position:left top"></div>
+  <div class="sticky" style="left:8px;top:728px;background:#BFEBD5;transform:rotate(-4deg)">Great team.<br>Great people.</div>
+
+  <div class="chal">
+    <span class="label">Challenges &amp; How I Overcame Them</span>
+    <div class="cs"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><div><b>Steep learning curve</b><p>→ Docs, small tests, asked early</p></div></div>
+    <div class="cs"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><div><b>Reproducing a handed-over system</b><p>→ Issue log, pinned versions, Git baseline</p></div></div>
+    <div class="cs"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><div><b>Unsupported &amp; false-alarm answers</b><p>→ Safer prompt, evidence fallback, re-tests</p></div></div>
+  </div>
+
+  <div class="bt">
+    <span class="label">The Biggest Takeaway</span>
+    <p>“Good AI isn’t only accurate — it’s grounded in evidence, safe and honest about its limits. I’ve grown professionally and personally.”</p>
+  </div>
+  <div class="lcg">Learn<br>Contribute<br>Grow ✦</div>
+</section>
+
+<!-- ======================= PANEL 3 ======================= -->
+<section class="panel p3">
+  <div class="hd">
+    <div class="kick">CO-OP EXPERIENCE</div>
+    <h1>From Classroom<br>to Career</h1>
+    <div class="sub">My Journey at KACST</div>
+    <div class="lc">LEARN<span>|</span>CONTRIBUTE<span>|</span>GROW</div>
+    <div class="same hand">Same goals.<br>New perspective.</div>
+    <div class="chart">
+      <h6>RETRIEVAL QUALITY @5</h6>
+      <div class="bars">
+        <div style="height:100%;background:var(--sky)"><span>1.00</span></div>
+        <div style="height:90%;background:var(--green)"><span>0.90</span></div>
+        <div style="height:83%;background:#8FB8FF"><span>0.83</span></div>
+        <div style="height:80%;background:var(--purple)"><span>0.80</span></div>
+        <div style="height:55%;background:var(--orange)"><span>0.55</span></div>
+      </div>
+      <div class="bl"><span>Hit@5</span><span>MRR</span><span>Recall</span><span>NDCG</span><span>Prec.</span></div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div><div class="c" style="background:var(--blue)"><svg viewBox="0 0 24 24"><path d="M4 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16"/><path d="M15 9h3a2 2 0 0 1 2 2v10M2 21h20"/></svg></div><b>Company</b><p>KACST<br>(Digital Health)</p></div>
+    <div><div class="c" style="background:var(--green)"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div><b>Location</b><p>Riyadh,<br>Saudi Arabia</p></div>
+    <div><div class="c" style="background:var(--orange)"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></div><b>Duration</b><p>Jun – Nov 2026<br>(22 weeks)</p></div>
+    <div><div class="c" style="background:var(--purple)"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div><b>Role</b><p>Co-op Student<br>(AI &amp; Data)</p></div>
+  </div>
+
+  <div class="two">
+    <div class="bx">
+      <h3>What I Did</h3>
+      <div class="wd" style="background:var(--purple-bg)"><div class="dot" style="background:var(--purple)"><svg viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></div><div><b>Developed Features</b><p>Medical RAG + local LLM explanations</p></div></div>
+      <div class="wd" style="background:var(--blue-bg)"><div class="dot" style="background:var(--blue)"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div><b>Led the Teams</b><p>Coordinated three trainee teams</p></div></div>
+      <div class="wd" style="background:var(--green-bg)"><div class="dot" style="background:var(--green)"><svg viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg></div><div><b>Improved Processes</b><p>Hit rate 76.7% → 90%; safer prompts</p></div></div>
+      <div class="wd" style="background:var(--orange-bg)"><div class="dot" style="background:var(--orange)"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div><div><b>Validated &amp; Documented</b><p>18/20 pass · final technical report</p></div></div>
+    </div>
+    <div class="bx">
+      <h3>My Growth</h3>
+      <div class="wd"><div class="dot" style="background:var(--blue)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><div><b>Technical</b><p>Hands-on AI, RAG and evaluation</p></div></div>
+      <div class="wd"><div class="dot" style="background:var(--purple)"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div><b>Professional</b><p>Communication, teamwork, time</p></div></div>
+      <div class="wd"><div class="dot" style="background:var(--green)"><svg viewBox="0 0 24 24"><path d="M7 20h10M12 20V10M12 10c0-4 3-6 7-6 0 4-3 6-7 6z"/></svg></div><div><b>Personal</b><p>Confidence and adaptability</p></div></div>
+      <div class="wd"><div class="dot" style="background:var(--orange)"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/><path d="M9 21h6"/></svg></div><div><b>Industry Insight</b><p>Research workflow and safety</p></div></div>
+    </div>
+  </div>
+
+  <div class="ethq">
+    <div class="bx" style="flex:1.05">
+      <h3>Workplace Ethics</h3>
+      <div class="wd"><div class="dot" style="background:var(--navy)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><div><b>Reliability</b><p>Met every weekly deadline</p></div></div>
+      <div class="wd"><div class="dot" style="background:var(--navy)"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div><b>Communication</b><p>Clear bilingual reports</p></div></div>
+      <div class="wd"><div class="dot" style="background:var(--navy)"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div><div><b>Confidentiality</b><p>Health data kept local</p></div></div>
+      <div class="wd"><div class="dot" style="background:var(--navy)"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></svg></div><div><b>Integrity</b><p>Reported limits honestly</p></div></div>
+    </div>
+    <div class="qbox"><i class="q">“</i>My co-op experience helped me grow into a more confident, independent and professional individual. I’m excited to keep building my career in data and AI.</div>
+  </div>
+
+  <div class="ahead">
+    <h3>Looking Ahead</h3>
+    <p>I’m grateful for this opportunity. <b>My advice to future co-op students:</b> ask early, document everything, and back every result with evidence.</p>
+    <div class="best hand">The best<br>is yet to come!</div>
+    <div class="steps">
+      <div><i style="background:var(--blue)">1</i>Fine-tune local model</div>
+      <div><i style="background:var(--green)">2</i>Hybrid search (BM25)</div>
+      <div><i style="background:var(--orange)">3</i>Sleep, ECG &amp; multimodal</div>
+      <div><i style="background:var(--purple)">4</i>Clinical validation</div>
+    </div>
+  </div>
+  <div class="foot"><div class="bar"><i style="background:var(--blue)"></i><i style="background:var(--green)"></i><i style="background:var(--orange)"></i><i style="background:var(--purple)"></i></div>
+    <div><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>LEARN</div>
+    <div><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>CONTRIBUTE</div>
+    <div><svg viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg>GROW</div></div>
+</section>
+</body>
+</html>
